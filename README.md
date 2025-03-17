@@ -15,26 +15,32 @@ The objective of this guide is to demonstrate how to:
 
 ### **1. Open Disk Management**  
 - Press **Windows + X** → Click **Disk Management** 
+
  ![](./images/disk1.png)
 
 ### **2. Create a New VHD**  
 - Click **Action** (top menu) → **Create VHD**.  
+
 ![](./images/disk2.png)
 
 ### **3. Choose File Location & Size**  
 - Click **Browse** and select where to save the VHD file (e.g, `C:\new VHD.vhd`)
 - Set the **size** (e.g: `1GB`) 
 - Choose **VHD (Fixed Size)** and Click **OK**
+
 ![](./images/disk3.png)
 
 ### **4. Initialize the Disk**  
 - In **Disk Management**, find your new disk (marked as "Not Initialized").  
+
 ![](./images/disk4.png) 
 
 - Right-click the disk → Click **Initialize Disk**.
+
 ![](./images/disk5.png)
 
 - Select **MBR (Master Boot Record)**. 
+
 ![](./images/disk6.png)
 
 ### **6. Create & Format the Partition**  
@@ -43,7 +49,9 @@ The objective of this guide is to demonstrate how to:
 ![](./images/disk8.png)
 ![](./images/disk9.png)
 
+
 - Click **Next** → **Click on Mount in the following empty NTFS folder** → **Browse** → **Assign a drive letter (e.g., `C: or D:`)** → **New folder** → **OK**
+
 ![](./images/disk10.png)
 ![](./images/disk12.png)
 ![](./images/disk11.png)
