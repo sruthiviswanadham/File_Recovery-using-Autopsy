@@ -56,78 +56,85 @@ The objective of this guide is to demonstrate how to:
 ![](./images/disk12.png)
 ![](./images/disk11.png)
 
-- Click **next** → **Finish**.  
+- Click **next** → **Finish**. 
 
-## **Step 2: Add & Delete Files for Recovery**  
+---
+
+## **Step 2: Add & Delete Files for Recovery** 
+
 ### **1. Copy Files to the Virtual Disk**  
-- Open **File Explorer** → Go to the new drive (`D:`).  
-- Create a new folder (`TestFolder`) and copy **4 images** into it.  
+- Open **File Explorer** → Go to the new drive (`C: or D:`), where the folder created in the previous step
+- Create a new folder (`TestFolder`) and copy **images or files** into it.  
 
 ### **2. Delete the Files**  
-- Select all four images → Press **Delete**.  
+- Select any one or two images → Press **Delete**.  
 - Empty the **Recycle Bin** to permanently delete them.  
 
 ---
 
 ## **Step 3: Recover Deleted Files Using Autopsy**  
-### **1. Open Autopsy & Create a New Case**  
-- Launch **Autopsy 4.21.0**.  
+### **1. Open Autopsy & Create a New Case** 
+
+- Launch **Autopsy** and **Run as a administrator**  
 - Click **Create New Case**.  
-- Enter a **Case Name** (e.g., `File Recovery Test`).  
+
+![](./images/a1.png)
+
+- Enter a **Case Name** (e.g., `Autopsy1`).  
 - Choose a **Case Folder** location.  
-- Click **Next** → Add optional details → Click **Finish**.  
+- Click **Next** → Click **Finish**.  
+
+![](./images/a2.png)
 
 ### **2. Add the Virtual Disk as an Evidence Source**  
-- Click **Add Data Source**.  
-- Select **Local Disk** → Choose the VHD drive (`D:`).  
+- Click **Add Data Source**  → **Select Host**
+
+![](./images/a3.png)
+
+- Select **Local Disk** → **next** 
+
+![](./images/a4.png)
+
+- Select Disk → **Choose the VHD drive (`Drive1`)**
+
+![](./images/a5.png)
+
 - Click **Next** → Keep default settings → Click **Finish**.  
 - Wait for Autopsy to process the disk.  
 
 ### **3. Recover Deleted Files**  
-- Go to **File Analysis** (left panel).  
+- Go to **File Views** (left panel).  
+
+![](./images/a6.png)
+
 - Click **Deleted Files** → Find your deleted images.  
 - Right-click an image → Click **Extract File**.  
-- Select a folder to save the recovered files (e.g., `C:\RecoveredFiles`).  
 
-✅ **Your deleted images are now recovered!**  
+![](./images/a7.png)
+
+- Select a folder to see the recovered files (e.g., `C:\image_recovery`).  
+
+**Your deleted images are now recovered!**  
 
 ---
 
-## **Step 4: Delete the Virtual Disk (Optional Cleanup)**  
+## **Step 4: Delete the Virtual Disk (Optional Cleanup)** 
+
 ### **1. Detach the VHD**  
 - Open **Disk Management** (`Win + X` → Disk Management).  
-- Find the **virtual disk** (`D:`).  
+- Find the **virtual disk** (`C: or D:`).  
 - Right-click the disk (not the partition) → Click **Detach VHD**.  
 
 ### **2. Delete the VHD File**  
 - Open **File Explorer**.  
-- Go to the location where you saved the `.vhd` file (e.g., `C:\AutopsyTest.vhd`).  
+- Go to the location where you saved the `.vhd` file (e.g., `C:\new VHD.vhd`).  
 - **Delete** the `.vhd` file.  
 - Empty the **Recycle Bin**.  
 
-✅ **Your virtual disk is completely removed!**  
-
+**Your virtual disk is completely removed!**  
+ 
 ---
+ 
 
-## **Tools Used**  
-- **Windows Disk Management** (for creating a VHD).  
-- **Autopsy 4.21.0** (for file recovery).  
-
----
-
-## **Screenshots**  
-_(Upload screenshots here if needed for better understanding.)_  
-
----
-
-## **Conclusion**  
-This guide demonstrated how to:  
-✅ Create a **Virtual Hard Disk (VHD)**.  
-✅ Add, delete, and recover images.  
-✅ Use **Autopsy** for forensic file recovery.  
-✅ Delete the virtual disk after completing the experiment.  
-
----
-
-🚀 **Now you can test data recovery techniques easily!** Let me know if you need further improvements.  
-
+## Result :
+ This guide covers creating a Virtual Hard Disk (VHD), adding, deleting, and recovering images using Autopsy, and safely deleting the virtual disk after the experiment.
