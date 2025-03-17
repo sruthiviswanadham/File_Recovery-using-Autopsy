@@ -10,23 +10,24 @@ The objective of this guide is to demonstrate how to:
 ## Virtual Disk Creation & File Recovery using Autopsy 
 
 
-## **Step 1: Create a Virtual Hard Disk (VHD)**  
+## Step 1: 
+   Create a Virtual Hard Disk (VHD) 
+
 ### **1. Open Disk Management**  
- Press **Win + X** → Click **Disk Management**.  
- ![](./disk.png)
+- Press **Windows + X** → Click **Disk Management** 
+ ![](./disk1.png)
 
 ### **2. Create a New VHD**  
 - Click **Action** (top menu) → **Create VHD**.  
+![](./disk2.png)
 
 ### **3. Choose File Location & Size**  
-- Click **Browse** and select where to save the VHD file (e.g., `C:\AutopsyTest.vhd`).  
-- Set the **size** (e.g., `1GB`).  
+- Click **Browse** and select where to save the VHD file (e.g, `C:\new VHD.vhd`)
+- Set the **size** (e.g: `1GB`) 
+- Choose **VHD (Fixed Size)** and Click **OK**
+![](./disk3.png)
 
-### **4. Select Disk Type**  
-- Choose **VHD (Fixed Size)** or **VHDX (Dynamically Expanding)**.  
-- Click **OK**.  
-
-### **5. Initialize the Disk**  
+### **4. Initialize the Disk**  
 - In **Disk Management**, find your new disk (marked as "Not Initialized").  
 - Right-click the disk → Click **Initialize Disk**.  
 - Select **MBR (Master Boot Record)**.  
